@@ -19,6 +19,6 @@ public class AopApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        announcementService.publish(new Announcement(1L, "TARGET", "ADDRESS", 0.12, 0.12, EAnnouncementStatus.UN_PUBLISHED));
+        announcementService.changeStatus(new Announcement(1L, "TARGET", "ADDRESS", 0.12, 0.12, EAnnouncementStatus.ARCHIVED));
     }
 }

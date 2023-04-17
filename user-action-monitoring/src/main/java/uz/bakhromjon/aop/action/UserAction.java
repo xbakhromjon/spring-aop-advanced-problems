@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class UserAction {
     private Long userId;
+    private Long announcementId;
     private LocalDateTime occurredAt;
 
     private String message;
