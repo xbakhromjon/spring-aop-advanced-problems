@@ -20,9 +20,8 @@ public class AnnouncementService {
     }
 
     @Action(type = UserActionType.CHANGE_STATUS_ANNOUNECMENT, message = "E'lon statusi o'zgartirildi")
-    public Boolean changeStatus(Announcement announcement) {
+    public void changeStatus(Announcement announcement) {
         announcementRepository.save(announcement);
         log.info("Announcement status changed");
-        return true;
     }
 }
